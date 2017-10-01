@@ -1,13 +1,22 @@
 class TodoController < ApplicationController
-def index 
-    @number= 2
-end
-def show
-    if params[:id]=='1' 
-        @task="Chemistry project"
+    def index 
+        @number= 2
     end
-    if params[:id]=='2'
-        @task="Algebra pages 30-33"
-    end
+    def show
+        if params[:id]=='1' 
+            @task="Chemistry project- "
+        end
+        if params[:id]=='2'
+            @task="Algebra pages 30-33"
+        end
+    
+        if params[:id]=='3'
+            @task=" Endlish essay"
+        end
+    
+        if params[:id]=='4'
+            @task="Woking papers due on monday" 
+        end
+    
+    end 
 end
-end 
